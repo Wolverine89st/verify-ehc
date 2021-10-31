@@ -1,0 +1,19 @@
+sudo apt-get install pcscd libpcsclite1 pcsc-tools libccid libnss3-tools opensc-pkcs11
+sudo apt-get install swig -y
+sudo apt-get install python3-pyscard -y
+
+sudo apt-get install python3-opencv python3-sip libjasper-dev libatlas-base-dev -y
+sudo pip3 install opencv-contrib-python==4.1.0.25
+sudo apt install libqtgui4 libqt4-test
+sudo apt install python3-pil
+ 
+sudo aptitude install python3-rpi.gpio
+sudo apt install python3-pip
+ 
+sudo apt-get install python-qrtools
+ 
+sudo pip3 install beepy
+ 
+scriptdir=$(dirname "$(readlink -f "$0")")
+sudo pip3 install -r $scriptdir/verify-ehc/requirements.txt
+sudo apt install python3-lxml
